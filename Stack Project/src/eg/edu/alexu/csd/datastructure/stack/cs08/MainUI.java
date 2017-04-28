@@ -2,12 +2,26 @@ package eg.edu.alexu.csd.datastructure.stack.cs08;
 
 import java.util.Scanner;
 
+/**
+ * call UI Method
+ * 
+ * Scan the choice and send it to UI to operate
+ * 
+ * @author ahmed
+ *
+ */
 public class MainUI {
 
 	Scanner input = new Scanner(System.in);
 	RuntimeException e = new RuntimeException();
 	UI help = new UI();
 
+	/**
+	 * Scan the choice and send it to UI ti operate
+	 * 
+	 * @author ahmed
+	 *
+	 */
 	public void doThis() {
 
 		help.welcome();

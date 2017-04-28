@@ -8,6 +8,16 @@ public class Stack implements IStack {
 	int counter = 0;
 	RuntimeException e = new RuntimeException();
 
+	/*
+	 * * Inserts a specified element at the specified position in the list.
+	 * 
+	 * @param index zero-based index
+	 * 
+	 * @param element object to insert
+	 * 
+	 * @see eg.edu.alexu.csd.datastructure.stack.IStack#add(int,
+	 * java.lang.Object)
+	 */
 	@Override
 	public void add(int index, Object element) {
 		// TODO Auto-generated method stub
@@ -31,6 +41,13 @@ public class Stack implements IStack {
 		}
 	}
 
+	/*
+	 * Removes the element at the top of stack and returns that element.
+	 * 
+	 * @return top of stack element, or through exception if empty
+	 * 
+	 * @see eg.edu.alexu.csd.datastructure.stack.IStack#pop()
+	 */
 	@Override
 	public Object pop() {
 		// TODO Auto-generated method stub
@@ -44,6 +61,13 @@ public class Stack implements IStack {
 		return newNode.value;
 	}
 
+	/*
+	 * Get the element at the top of stack without removing it from stack.
+	 * 
+	 * @return top of stack element, or through exception if empty
+	 * 
+	 * @see eg.edu.alexu.csd.datastructure.stack.IStack#peek()
+	 */
 	@Override
 	public Object peek() {
 		// TODO Auto-generated method stub
@@ -53,6 +77,13 @@ public class Stack implements IStack {
 		return this.head.value;
 	}
 
+	/*
+	 * Pushes an item onto the top of this stack.
+	 * 
+	 * @param object to insert
+	 * 
+	 * @see eg.edu.alexu.csd.datastructure.stack.IStack#push(java.lang.Object)
+	 */
 	@Override
 	public void push(Object element) {
 		// TODO Auto-generated method stub
@@ -66,6 +97,13 @@ public class Stack implements IStack {
 		this.head = newNode;
 	}
 
+	/*
+	 * Tests if this stack is empty
+	 * 
+	 * @return true if stack empty
+	 * 
+	 * @see eg.edu.alexu.csd.datastructure.stack.IStack#isEmpty()
+	 */
 	@Override
 	public boolean isEmpty() {
 		// TODO Auto-generated method stub
@@ -75,6 +113,13 @@ public class Stack implements IStack {
 		return false;
 	}
 
+	/*
+	 * Returns the number of elements in the stack.
+	 * 
+	 * @return number of elements in the stack
+	 * 
+	 * @see eg.edu.alexu.csd.datastructure.stack.IStack#size()
+	 */
 	@Override
 	public int size() {
 		// TODO Auto-generated method stub
